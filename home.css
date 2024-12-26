@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.background-image {
+  background-image: url('./img/home_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent dark overlay */
+  z-index: 1;
+}
+
+.login-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  /* Increased width */
+  max-width: 350px;
+  /* Slightly wider max-width */
+  background-color: white;
+  /* Modal background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Adds a shadow for separation */
+  padding: 1.2rem;
+  /* Reduced padding for lower height */
+  border-radius: 10px;
+  /* Rounds the corners */
+  z-index: 2;
+  /* Places the modal above the overlay */
+}
+
+.form-control {
+  font-size: 0.85rem;
+  height: calc(1.5em + 0.75rem + 2px);
+}
+
+.btn {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.75rem;
+}
